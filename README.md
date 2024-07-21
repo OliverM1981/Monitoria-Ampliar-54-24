@@ -50,9 +50,9 @@ Estou ansioso para conectar com colegas e profissionais que compartilham minha p
 
 ## :globe_with_meridians: Encontros ao vivo
 
-:calendar: De segunda a sexta-feira, com exceção da quinta-feira  :alarm_clock: Das 20h às 22h.<br>
+:calendar: Terças e Quartas  :alarm_clock: Das 20h às 22h.<br>
 
-Via Teams acessando este [link](https://teams.microsoft.com/v2/?meetingjoin=true#/l/meetup-join/19:meeting_ZGQwYTY3ZTQtNzlkNC00MjA1LTk2ZTAtM2ZlMzJjNDE2ZTY5@thread.v2/0?context=%7b%22Tid%22%3a%22311bf579-63f2-426a-80aa-d3a26f1c0ad1%22%2c%22Oid%22%3a%22f2f27442-044e-436c-ab7f-b7468e631ad5%22%7d&anon=true&deeplinkId=d8d73c6f-bc54-47d0-964d-4d4451e4e89c)
+Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_NGFjMTdkYmItNDRmMC00MThiLTljZmEtYjNmZTZlYmNlMDhm%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522311bf579-63f2-426a-80aa-d3a26f1c0ad1%2522%252c%2522Oid%2522%253a%2522d9d9f61f-3b69-4da3-bd9b-e8237deec503%2522%257d&sa=D&sntz=1&usg=AOvVaw3WEXDDJ5X9Vh2UpvqKufIL)
 
 
 ===========================================================================

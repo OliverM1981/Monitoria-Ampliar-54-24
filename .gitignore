@@ -15,6 +15,9 @@
 *.swp
 *.bak
 
+# Ignore execution files
+*.exe
+
 # Ignore node modules
 /node_modules/
 

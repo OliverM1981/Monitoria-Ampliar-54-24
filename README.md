@@ -11,7 +11,7 @@
 
 # :mag: Programa Ampliar Tecnologias
 
-Olá, este repositório é exclusivo para uso durante o módulo 51/2024 do Programa Ampliar Tecnologias<br>
+Olá, este repositório é exclusivo para uso durante o módulo 53/2024 do Programa Ampliar Tecnologias<br>
 Monitoria de Estrutura de Dados
 
 
@@ -19,7 +19,7 @@ Monitoria de Estrutura de Dados
 <p align = "justify">
 
 
-Olá, sou Mauricio De Oliveira, um estudante do curso de Engenharia de Software na Unicesumar, atualmente na 12ª série.
+Olá, sou Mauricio De Oliveira, um estudante do curso de Engenharia de Software na Unicesumar, atualmente na 15ª série.
 
 Além de me dedicar aos estudos, tenho o privilégio de atuar como monitor na disciplina de Estrutura de Dados, por meio do programa Ampliar Tecnologias da Unicesumar. Essa oportunidade não apenas reforça meu entendimento dos conceitos fundamentais, mas também me permite compartilhar meu entusiasmo pela tecnologia com meus colegas.
 
@@ -65,9 +65,9 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ## :bookmark_tabs: Estrutura de Dados I
 ### :books: Conteúdo programático
 #### :memo: UNIDADE I: PONTEIROS
-⬛ Estruturas Homogêneas e Heterogêneas<br>
-⬛ Vetores e Matrizes<br>
-⬛ Structs<br>
+✅ Estruturas Homogêneas e Heterogêneas<br>
+✅ Vetores e Matrizes<br>
+✅ Structs<br>
 ⬛ Ponteiros<br>
 ⬛ Propriedades de Ponteiros<br>
 ⬛ Alocação Dinâmica na Memória<br>

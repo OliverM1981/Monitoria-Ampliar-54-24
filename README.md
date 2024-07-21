@@ -65,9 +65,9 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ## :bookmark_tabs: Estrutura de Dados I
 ### :books: Conteúdo programático
 #### :memo: UNIDADE I: PONTEIROS
-✅ Estruturas Homogêneas e Heterogêneas<br>
-✅ Vetores e Matrizes<br>
-✅ Structs<br>
+✅ [Estruturas Homogêneas e Heterogêneas](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
+✅ [Vetores e Matrizes](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
+✅ [Structs](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
 ⬛ Ponteiros<br>
 ⬛ Propriedades de Ponteiros<br>
 ⬛ Alocação Dinâmica na Memória<br>

@@ -57,7 +57,7 @@ Via Teams acessando este [link](https://teams.microsoft.com/v2/?meetingjoin=true
 
 ===========================================================================
 
-| <img alt="Calendar" title="#calendar" src="./assets/1.png" width=2400/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=250/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=250/> | 
+| <img alt="Calendar" title="#calendar" src="./assets/1.png" width=400/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=250/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=250/> | 
 | :---: | :---: | :---: 
 
 ===========================================================================

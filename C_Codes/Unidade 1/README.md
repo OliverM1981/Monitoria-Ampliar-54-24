@@ -34,7 +34,7 @@ Estruturas heterogêneas contêm elementos de diferentes tipos de dados. Exemplo
 
 ### Structs
 
-Uma `struct` (estrutura) permite agrupar variáveis de tipos diferentes sob um único nome.<brS>
+Uma `struct` (estrutura) permite agrupar variáveis de tipos diferentes sob um único nome.<br>
 <img alt="Structs" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215237.png" width=150/>
 
 ### Enum

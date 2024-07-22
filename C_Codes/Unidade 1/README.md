@@ -35,7 +35,7 @@ Estruturas heterogêneas contêm elementos de diferentes tipos de dados. Exemplo
 ### Structs
 
 Uma `struct` (estrutura) permite agrupar variáveis de tipos diferentes sob um único nome.<br>
-<img alt="Structs" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215237.png" width=250/>
+<img alt="Structs" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215237.png" width=200/>
 
 ### Enum
 
@@ -71,7 +71,7 @@ A alocação dinâmica permite que o espaço de memória seja alocado em tempo d
 ## Vetores e Matrizes Dinâmicos
 
 ### Vetores Dinâmicos
-<img alt="Vetores Dinamicos" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215333.png" width=400/>
+<img alt="Vetores Dinamicos" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215333.png" width=600/>
 
 ### Matrizes Dinâmicas
 <img alt="Matrizes Dinamicas" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215341.png" width=400/>

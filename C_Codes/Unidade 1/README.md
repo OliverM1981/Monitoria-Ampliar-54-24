@@ -34,8 +34,8 @@ Estruturas heterogêneas contêm elementos de diferentes tipos de dados. Exemplo
 
 ### Structs
 
-Uma `struct` (estrutura) permite agrupar variáveis de tipos diferentes sob um único nome.
-<img alt="Structs" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215237.png" width=250/>
+Uma `struct` (estrutura) permite agrupar variáveis de tipos diferentes sob um único nome.<brS>
+<img alt="Structs" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215237.png" width=150/>
 
 ### Enum
 
@@ -44,7 +44,7 @@ Um `enum` (enumeração) é um tipo definido pelo usuário que consiste em um co
 
 ### Union
 
-Uma `union` permite armazenar diferentes tipos de dados no mesmo espaço de memória, mas apenas um tipo de dado pode ser utilizado por vez.
+Uma `union` permite armazenar diferentes tipos de dados no mesmo espaço de memória, mas apenas um tipo de dado pode ser utilizado por vez.<br>
 <img alt="Union" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-21 215312.png" width=400/>
 
 ## Ponteiros

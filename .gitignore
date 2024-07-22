@@ -5,6 +5,7 @@
 /build/
 /bin/
 /out/
+/build_wrapper_output_directory/
 
 # Ignore IDE specific files
 *.idea/
@@ -20,6 +21,7 @@
 
 # Ignore node modules
 /node_modules/
+/build_wrapper_output_directory/
 
 # Ignore system files
 .DS_Store

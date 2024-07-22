@@ -69,9 +69,9 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ✅ [Vetores e Matrizes](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
 ✅ [Structs](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
 ⬛ [Ponteiros](./C_Codes/Ponteiros/)<br>
-⬛ Propriedades de Ponteiros<br>
-⬛ Alocação Dinâmica na Memória<br>
-⬛ Criando Vetores Dinâmicos<br>
+⬛ [Propriedades de Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
+⬛ [Alocação Dinâmica na Memória](./C_Codes/Ponteiros/pointerMalloc.c)<br>
+⬛ [Criando Vetores Dinâmicos](./C_Codes/Ponteiros/dynamicArray.c)<br>
 ⬛ Considerações Finais<br><br>
 
 #### :memo: UNIDADE II: PILHAS E FILAS

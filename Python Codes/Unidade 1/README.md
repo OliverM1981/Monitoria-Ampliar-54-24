@@ -1,4 +1,4 @@
-# Unidade 1 - Códigom em Python
+# Unidade 1 - Códigos em Python
 
 ![Python Icon](https://img.icons8.com/color/48/000000/python.png) ![C Icon](https://img.icons8.com/ios/50/000000/c-plus-plus.png)
 

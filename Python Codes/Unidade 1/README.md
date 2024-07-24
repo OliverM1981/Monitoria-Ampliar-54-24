@@ -1,7 +1,6 @@
 # Unidade 1 - Códigos em Python
 
-![Python Icon](https://img.icons8.com/color/48/000000/python.png) ![C Icon](https://img.icons8.com/ios/50/000000/c-plus-plus.png)
-
+![Python Icon](https://img.icons8.com/color/48/000000/python.png)
 Este repositório contém exemplos de código que ilustram como converter programas C para Python. Abaixo, você encontrará explicações sobre como conceitos básicos de manipulação de dados e controle de fluxo em C são abordados em Python.
 
 ## 1. **Troca de Valores**

@@ -66,17 +66,18 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ### :books: Conteúdo programático
 #### :memo: UNIDADE I: PONTEIROS
 ✅ [Estruturas Homogêneas e Heterogêneas](./C_Codes/Unidade%201/Revisão%20estruturas/revisaoEstruturas.c)<br>
-✅ [Vetores e Matrizes](./C_Codes/Unidade%201/Revisão%20estruturas/revisaoEstruturas.c)<br>
-✅ [Structs](./C_Codes/Unidade%201/Revisão%20estruturas/revisaoEstruturas.c)<br>
-✅ [Ponteiros](./C_Codes/Unidade%201/Ponteiros/)<br>
-✅ [Propriedades de Ponteiros](./C_Codes/Unidade%201/Ponteiros/pointer.c)<br>
-✅ [Alocação Dinâmica na Memória](./C_Codes/Unidade%201/Ponteiros/pointerMalloc.c)<br>
-✅ [Criando Vetores Dinâmicos](./C_Codes/Unidade%201/Ponteiros/dynamicArray.c)<br>
-✅ [Considerações Finais](./C_Codes/Unidade%201/README.md)<br><br>
+✅ [Vetores e Matrizes](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
+✅ [Structs](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
+✅ [Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
+✅ [Propriedades de Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
+✅ [Alocação Dinâmica na Memória](./C_Codes/Ponteiros/pointerMalloc.c)<br>
+✅ [Criando Vetores Dinâmicos](./C_Codes/Ponteiros/dynamicArray.c)<br>
+✅ [Considerações Finais](./Unidade%201/README.md)<br><br>
 
 #### :memo: UNIDADE II: PILHAS E FILAS
-⬛ Pilhas<br>
-⬛ Filas<br>
+⬛ [Pilhas](./C_Codes/Pilha)<br>
+⬛ [Filas](./C_Codes/Fila/) <br>
+⬛ [Considerações Finais](./Unidade%202/README.md)<br><br>
 
 #### :memo: UNIDADE III: LISTAS DINÂMICAS
 ⬛ Fundamentos de Listas Dinâmicas<br>

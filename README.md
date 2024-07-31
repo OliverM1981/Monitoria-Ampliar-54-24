@@ -75,9 +75,9 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ✅ [Considerações Finais](./Unidade%201/README.md)<br><br>
 
 #### :memo: UNIDADE II: PILHAS E FILAS
-⬛ [Pilhas](./C_Codes/Pilha)<br>
-⬛ [Filas](./C_Codes/Fila/) <br>
-⬛ [Considerações Finais](./Unidade%202/README.md)<br><br>
+✅ [Pilhas](./C_Codes/Pilha)<br>
+✅ [Filas](./C_Codes/Fila/) <br>
+✅ [Considerações Finais](./Unidade%202/README.md)<br><br>
 
 #### :memo: UNIDADE III: LISTAS DINÂMICAS
 ⬛ Fundamentos de Listas Dinâmicas<br>

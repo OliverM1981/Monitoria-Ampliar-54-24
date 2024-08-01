@@ -68,14 +68,14 @@ int main() {
             printf("\n1. Inserir na lista\n2. Remover da lista\n3. Sair\nEscolha uma opção: ");
             scanf("%d", &choice);
         } else {
-
-           printf("\n1. Inserir na lista\n3. Sair\nEscolha uma opção: ");
-           scanf("%d", &choice);
-           if( choice == 2){
-            printf("Opção Inválida\n");            
-           } 
-           continue;
+            printf("\n1. Inserir na lista\n3. Sair\nEscolha uma opção: ");
+            scanf("%d", &choice);
+            if (choice == 2) {
+                printf("Opção Inválida\n");
+                continue;
+            } 
         }
+
         
         switch (choice) {
             case 1:
@@ -84,9 +84,13 @@ int main() {
                 printf("Número %d inserido na lista.\n", data);
                 break;
             case 2:
-                printf("Digite o número a ser removido: ");
-                scanf("%d", &data);
-                removeNode(&head, data);
+                if (head == NULL) {
+                    printf("A lista está vazia, não há elementos para remover.\n");
+                } else {
+                    printf("Digite o número a ser removido: ");
+                    scanf("%d", &data);
+                    removeNode(&head, data);
+                }
                 break;
             case 3:
                 while (head != NULL) {

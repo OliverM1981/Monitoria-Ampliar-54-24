@@ -58,10 +58,10 @@ int main() {
         if(top != NULL){
             printf("Pilha Dinâmica: ");
             printStack(top);
-            printf("\n1. Inserir na lista\n2. Remover da lista\n3. Sair\nEscolha uma opção: ");
+            printf("\n1. Inserir na pilha\n2. Remover da pilha\n3. Sair\nEscolha uma opção: ");
             scanf("%d", &choice);
         } else {
-            printf("\n1. Inserir na lista\n3. Sair\nEscolha uma opção: ");
+            printf("\n1. Inserir na pilha\n3. Sair\nEscolha uma opção: ");
             scanf("%d", &choice);
             if (choice == 2) {
                 printf("Opção Inválida\n");

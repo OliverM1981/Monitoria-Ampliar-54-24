@@ -80,10 +80,10 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ✅ [Considerações Finais](./Unidade%202/README.md)<br><br>
 
 #### :memo: UNIDADE III: LISTAS DINÂMICAS
-⬛ Fundamentos de Listas Dinâmicas<br>
-⬛ Implementando uma Lista Dinâmica<br>
-⬛ Lista Dinâmica com Forma de Pilha<br>
-⬛ Lista Dinâmica com Forma de Fila<br><br>
+⬛ [Fundamentos de Listas Dinâmicas](./Unidade%203/README.md)<br>
+⬛ [Implementando uma Lista Dinâmica](./C_Codes/Lista%20Encadeada/linkedList.c)<br>
+⬛ [Lista Dinâmica com Forma de Pilha](./C_Codes/Lista%20Dinamica%20Pilha/dynamicListStack.c)<br>
+⬛ [Lista Dinâmica com Forma de Fila](./C_Codes/Lista%20Dinâmica%20Fila/dynamicListQueue.c)<br><br>
 
 #### :memo: UNIDADE IV: GRAFOS
 ⬛ Sete Pontes de Königsberg<br>

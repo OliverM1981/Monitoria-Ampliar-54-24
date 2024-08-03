@@ -7,52 +7,52 @@
 #include <locale.h>
 
 #define ACELERATION_G 9.81
+#define PI 3.141592653589793 // DefiniÃ§Ã£o de PI usando #define
 
-// Definição do enum cores
+// DefiniÃ§Ã£o do enum cores
 enum cores {
     RED = 0,
     GREEN = 1,
     BLUE = 2
 };
 
-// Função para verificar se a aceleração é alta
+// FunÃ§Ã£o para verificar se a aceleraÃ§Ã£o Ã© alta
 bool is_high_acceleration(double acceleration) {
-    // Define uma aceleração alta se for maior que a constante ACELERATION_G
     return acceleration > ACELERATION_G;
 }
 
-// Função para retornar a cor associada com base na aceleração
+// FunÃ§Ã£o para retornar a cor associada com base na aceleraÃ§Ã£o
 enum cores get_color_based_on_acceleration(double acceleration) {
     if (acceleration < ACELERATION_G) {
-        return GREEN; // Aceleração baixa é associada à cor GREEN
+        return GREEN; // AceleraÃ§Ã£o baixa Ã© associada Ã  cor GREEN
     } else if (acceleration == ACELERATION_G) {
-        return BLUE; // Aceleração igual à constante é associada à cor BLUE
+        return BLUE;  // AceleraÃ§Ã£o igual Ã  constante Ã© associada Ã  cor BLUE
     } else {
-        return RED; // Aceleração alta é associada à cor RED
+        return RED;   // AceleraÃ§Ã£o alta Ã© associada Ã  cor RED
     }
 }
 
-// Declaração da variável do tipo enum cores
+// DeclaraÃ§Ã£o da variÃ¡vel do tipo enum cores
 enum cores colours;
 
-// Declaração da variável do tipo union
+// DeclaraÃ§Ã£o da variÃ¡vel do tipo union
 union {
     int numero;
     float decimal;
     char letra;
 } u;
 
-// Definição da struct pessoa
+// DefiniÃ§Ã£o da struct pessoa
 struct pessoa {
     int idade;
     char nome[30];
     float estatura;
 };
 
-// Declaração da variável do tipo struct pessoa
+// DeclaraÃ§Ã£o da variÃ¡vel do tipo struct pessoa
 struct pessoa Pessoa;
 
-// Definição de um typedef para Livro
+// DefiniÃ§Ã£o de um typedef para Livro
 typedef struct {
     char titulo[100];
     char autor[50];
@@ -60,105 +60,84 @@ typedef struct {
     float preco;
 } Livro;
 
-// Declaração de uma variável do tipo Livro
+// DeclaraÃ§Ã£o de uma variÃ¡vel do tipo Livro
 Livro Livro1;
 
-// Declaração de variáveis de tipos diversos
+// DeclaraÃ§Ã£o de variÃ¡veis de tipos diversos
 unsigned short int serie;
 unsigned long int max32 = 4294967295UL;
 const float PI_F = 3.1415927f;
-const double PI = 3.141592653589793;
-double PI_DOUBLE = M_PI;
-char projeto[] = {"Ampliar Tecnologias"};
+char projeto[] = "Ampliar Tecnologias";
 
 int main(void) {
-    //Definindo configurações de regionalidade
-    setlocale(LC_ALL,"Portuguese");
-    // Gerar números aleatórios
-    // Inicializando o gerador de números aleatórios com uma semente apropriada
+    setlocale(LC_ALL, "Portuguese");
     srand((unsigned int)time(NULL));
 
-    // Inicialização da variável do tipo enum cores
     colours = RED;
-    // Exibindo o valor da variável colours
-    printf("Cor selecionada: %d\n", colours); // RED tem valor 0
+    printf("Cor selecionada: %d\n", colours);
 
-    // Inicialização da variável do tipo union
-    u.numero = 42; // Atribuindo um valor ao membro 'numero' da union
+    u.numero = 42;
     printf("Valor da union (numero): %d\n", u.numero);
 
-    // Modificando o valor da union
-    u.decimal = 3.14f; // Atribuindo um valor ao membro 'decimal' da union
+    u.decimal = 3.14f;
     printf("Valor da union (decimal): %.2f\n", u.decimal);
 
-    // Modificando o valor da union novamente
-    u.letra = 'A'; // Atribuindo um valor ao membro 'letra' da union
+    u.letra = 'A';
     printf("Valor da union (letra): %c\n", u.letra);
 
-    // Inicialização da variável do tipo struct pessoa
     Pessoa.idade = 25;
-    strcpy(Pessoa.nome, "João Silva"); // Atribuindo um valor ao membro 'nome'
+    strcpy(Pessoa.nome, "JoÃ£o Silva");
     Pessoa.estatura = 1.75f;
-    // Exibindo os valores da struct pessoa
     printf("Pessoa:\n");
     printf("Idade: %d\n", Pessoa.idade);
     printf("Nome: %s\n", Pessoa.nome);
     printf("Estatura: %.2f\n", Pessoa.estatura);
 
-    // Inicialização da variável do tipo Livro
-    strcpy(Livro1.titulo, "O Guia do Mochileiro das Galáxias");
+    strcpy(Livro1.titulo, "O Guia do Mochileiro das GalÃ¡xias");
     strcpy(Livro1.autor, "Douglas Adams");
     Livro1.ano_publicacao = 1979;
     Livro1.preco = 29.90f;
-    // Exibindo os valores do Livro
     printf("Livro:\n");
-    printf("Título: %s\n", Livro1.titulo);
+    printf("TÃ­tulo: %s\n", Livro1.titulo);
     printf("Autor: %s\n", Livro1.autor);
-    printf("Ano de publicação: %d\n", Livro1.ano_publicacao);
-    printf("Preço: %.2f\n", Livro1.preco);
+    printf("Ano de publicaÃ§Ã£o: %d\n", Livro1.ano_publicacao);
+    printf("PreÃ§o: %.2f\n", Livro1.preco);
 
-    // Trabalhando com variáveis de tipos diversos
     serie = 12345;
-    printf("Número da série: %hu\n", serie);
-    printf("Valor máximo de 32 bits: %lu\n", max32);
+    printf("NÃºmero da sÃ©rie: %hu\n", serie);
+    printf("Valor mÃ¡ximo de 32 bits: %lu\n", max32);
     printf("Valor de PI_F: %.7f\n", PI_F);
     printf("Valor de PI: %.15f\n", PI);
-    printf("Valor de PI_DOUBLE: %.15f\n", PI_DOUBLE);
     printf("Projeto: %s\n", projeto);
 
-    // Trabalhando com a aceleração e cor
-    double acceleration = 12.5; // Exemplo de valor de aceleração
+    double acceleration = 12.5;
 
-    // Verificar se a aceleração é alta
     if (is_high_acceleration(acceleration)) {
-        printf("A aceleração de %.2f é alta.\n", acceleration);
+        printf("A aceleraÃ§Ã£o de %.2f Ã© alta.\n", acceleration);
     } else {
-        printf("A aceleração de %.2f não é alta.\n", acceleration);
+        printf("A aceleraÃ§Ã£o de %.2f nÃ£o Ã© alta.\n", acceleration);
     }
 
-    // Obter a cor baseada na aceleração
     enum cores color = get_color_based_on_acceleration(acceleration);
 
-    // Exibir a cor associada usando números diretamente
     switch (color) {
-        case 0: // RED
-            printf("A cor associada à aceleração é RED.\n");
+        case RED:
+            printf("A cor associada Ã  aceleraÃ§Ã£o Ã© RED.\n");
             break;
-        case 1: // GREEN
-            printf("A cor associada à aceleração é GREEN.\n");
+        case GREEN:
+            printf("A cor associada Ã  aceleraÃ§Ã£o Ã© GREEN.\n");
             break;
-        case 2: // BLUE
-            printf("A cor associada à aceleração é BLUE.\n");
+        case BLUE:
+            printf("A cor associada Ã  aceleraÃ§Ã£o Ã© BLUE.\n");
             break;
         default:
             printf("Cor desconhecida.\n");
             break;
     }
 
-    // Gerar e exibir 5 números aleatórios entre 0 e 99
-    printf("Números aleatórios:\n");
+    printf("NÃºmeros aleatÃ³rios:\n");
     for (int i = 0; i < 5; ++i) {
-        int random_number = rand() % 100; // Número aleatório entre 0 e 99
+        int random_number = rand() % 100; // NÃºmero aleatÃ³rio entre 0 e 99
         printf("%d ", random_number);
     }
     printf("\n");

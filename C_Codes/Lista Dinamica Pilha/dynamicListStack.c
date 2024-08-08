@@ -3,13 +3,13 @@
 #include <time.h>
 #include <locale.h>
 
-// Defini√ß√£o do n√≥ da pilha
+// DefiniÁ„o do nÛ da pilha
 typedef struct Node {
     int data;
     struct Node* next;
 } Node;
 
-// Fun√ß√£o para criar um novo n√≥
+// FunÁ„o para criar um novo nÛ
 Node* createNode(int data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
     newNode->data = data;
@@ -17,17 +17,17 @@ Node* createNode(int data) {
     return newNode;
 }
 
-// Fun√ß√£o para empurrar um novo n√≥ no topo da pilha
+// FunÁ„o para empurrar um novo nÛ no topo da pilha
 void push(Node** top, int data) {
     Node* newNode = createNode(data);
     newNode->next = *top;
     *top = newNode;
 }
 
-// Fun√ß√£o para remover o n√≥ do topo da pilha
+// FunÁ„o para remover o nÛ do topo da pilha
 void pop(Node** top) {
     if (*top == NULL) {
-        printf("A pilha est√° vazia, n√£o h√° elementos para remover.\n");
+        printf("A pilha est· vazia, n„o h· elementos para remover.\n");
         return;
     }
 
@@ -37,7 +37,7 @@ void pop(Node** top) {
     printf("Elemento removido do topo da pilha.\n");
 }
 
-// Fun√ß√£o para imprimir a pilha
+// FunÁ„o para imprimir a pilha
 void printStack(Node* top) {
     Node* current = top;
     while (current != NULL) {
@@ -56,15 +56,15 @@ int main() {
 
     while (1) {
         if(top != NULL){
-            printf("Pilha Din√¢mica: ");
+            printf("Pilha Din‚mica: ");
             printStack(top);
-            printf("\n1. Inserir na pilha\n2. Remover da pilha\n3. Sair\nEscolha uma op√ß√£o: ");
+            printf("\n1. Inserir na pilha\n2. Remover da pilha\n3. Sair\nEscolha uma opÁ„o: ");
             scanf("%d", &choice);
         } else {
-            printf("\n1. Inserir na pilha\n3. Sair\nEscolha uma op√ß√£o: ");
+            printf("\n1. Inserir na pilha\n3. Sair\nEscolha uma opÁ„o: ");
             scanf("%d", &choice);
             if (choice == 2) {
-                printf("Op√ß√£o Inv√°lida\n");
+                printf("OpÁ„o Inv·lida\n");
                 continue;
             } 
         }
@@ -73,13 +73,13 @@ int main() {
             case 1:
                 data = rand() % 100;
                 push(&top, data);
-                printf("N√∫mero %d inserido na pilha.\n", data);
+                printf("N˙mero %d inserido na pilha.\n", data);
                 break;
             case 2:
                 pop(&top);
                 break;
             case 3:
-                // Libera a mem√≥ria alocada para a pilha
+                // Libera a memÛria alocada para a pilha
                 while (top != NULL) {
                     Node* temp = top;
                     top = top->next;
@@ -87,7 +87,7 @@ int main() {
                 }
                 return 0;
             default:
-                printf("Op√ß√£o inv√°lida.\n");
+                printf("OpÁ„o inv·lida.\n");
         }
     }
 }

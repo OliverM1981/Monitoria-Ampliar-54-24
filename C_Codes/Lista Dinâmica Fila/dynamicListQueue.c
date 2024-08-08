@@ -3,25 +3,29 @@
 #include <time.h>
 #include <locale.h>
 
-// Defini√ß√£o do n√≥ da fila
+// DefiniÁ„o do nÛ da fila
 typedef struct Node {
     int data;
     struct Node* next;
 } Node;
 
-// Fun√ß√£o para criar um novo n√≥
+// FunÁ„o para criar um novo nÛ
 Node* createNode(int data) {
     Node* newNode = (Node*)malloc(sizeof(Node));
+    if (newNode == NULL) {
+        printf("Erro ao alocar memÛria.\n");
+        exit(1); // Encerra o programa em caso de falha na alocaÁ„o
+    }
     newNode->data = data;
     newNode->next = NULL;
     return newNode;
 }
 
-// Fun√ß√£o para enfileirar (inserir no final)
+// FunÁ„o para enfileirar (inserir no final)
 void enqueue(Node** front, Node** rear, int data) {
     Node* newNode = createNode(data);
     if (*rear == NULL) {
-        // Se a fila est√° vazia
+        // Se a fila est· vazia
         *front = *rear = newNode;
     } else {
         // Adiciona no final da fila
@@ -30,10 +34,10 @@ void enqueue(Node** front, Node** rear, int data) {
     }
 }
 
-// Fun√ß√£o para desenfileirar (remover do in√≠cio)
+// FunÁ„o para desenfileirar (remover do inÌcio)
 void dequeue(Node** front, Node** rear) {
     if (*front == NULL) {
-        printf("A fila est√° vazia, n√£o h√° elementos para remover.\n");
+        printf("A fila est· vazia, n„o h· elementos para remover.\n");
         return;
     }
 
@@ -41,15 +45,15 @@ void dequeue(Node** front, Node** rear) {
     *front = (*front)->next;
 
     if (*front == NULL) {
-        // Se a fila ficou vazia, o rear tamb√©m deve ser NULL
+        // Se a fila ficou vazia, o rear tambÈm deve ser NULL
         *rear = NULL;
     }
 
     free(temp);
-    printf("Elemento removido do in√≠cio da fila.\n");
+    printf("Elemento removido do inÌcio da fila.\n");
 }
 
-// Fun√ß√£o para imprimir a fila
+// FunÁ„o para imprimir a fila
 void printQueue(Node* front) {
     Node* current = front;
     while (current != NULL) {
@@ -61,38 +65,39 @@ void printQueue(Node* front) {
 
 int main() {
     setlocale(LC_ALL, "Portuguese");
-    Node* front = NULL; // In√≠cio da fila
+    Node* front = NULL; // InÌcio da fila
     Node* rear = NULL;  // Final da fila
     int choice, data;
 
     srand(time(NULL));
 
     while (1) {
-        if(front != NULL){
-            printf("FilaDin√¢mica: ");
-            printQueue(front);
-            printf("\n1. Inserir na fila\n2. Remover da fila\n3. Sair\nEscolha uma op√ß√£o: ");
-            scanf("%d", &choice);
-        } else {
-            printf("\n1. Inserir na Fila\n3. Sair\nEscolha uma op√ß√£o: ");
-            scanf("%d", &choice);
-            if (choice == 2) {
-                printf("Op√ß√£o Inv√°lida\n");
-                continue;
-            } 
+        printf("\nFila Din‚mica: ");
+        printQueue(front);
+        printf("\n1. Inserir na fila\n");
+
+        if (front != NULL) {
+            printf("2. Remover da fila\n");
         }
+
+        printf("3. Sair\nEscolha uma opÁ„o: ");
+        scanf("%d", &choice);
 
         switch (choice) {
             case 1:
                 data = rand() % 100;
                 enqueue(&front, &rear, data);
-                printf("N√∫mero %d enfileirado.\n", data);
+                printf("N˙mero %d enfileirado.\n", data);
                 break;
             case 2:
-                dequeue(&front, &rear);
+                if (front != NULL) {
+                    dequeue(&front, &rear);
+                } else {
+                    printf("A fila est· vazia, n„o h· elementos para remover.\n");
+                }
                 break;
             case 3:
-                // Libera a mem√≥ria alocada para a fila
+                // Libera a memÛria alocada para a fila
                 while (front != NULL) {
                     Node* temp = front;
                     front = front->next;
@@ -100,7 +105,7 @@ int main() {
                 }
                 return 0;
             default:
-                printf("Op√ß√£o inv√°lida.\n");
+                printf("OpÁ„o inv·lida.\n");
         }
     }
 }

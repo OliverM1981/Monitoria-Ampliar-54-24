@@ -37,7 +37,7 @@ void removeNode(Node** head, int data) {
     }
 
     if (temp == NULL) {
-        printf("Elemento %d n√£o encontrado.\n", data);
+        printf("Elemento %d n„o encontrado.\n", data);
         return;
     }
 
@@ -65,13 +65,13 @@ int main() {
         if(head != NULL){
             printf("Lista: ");
             printList(head);
-            printf("\n1. Inserir na lista\n2. Remover da lista\n3. Sair\nEscolha uma op√ß√£o: ");
+            printf("\n1. Inserir na lista\n2. Remover da lista\n3. Sair\nEscolha uma opÁ„o: ");
             scanf("%d", &choice);
         } else {
-            printf("\n1. Inserir na lista\n3. Sair\nEscolha uma op√ß√£o: ");
+            printf("\n1. Inserir na lista\n3. Sair\nEscolha uma opÁ„o: ");
             scanf("%d", &choice);
             if (choice == 2) {
-                printf("Op√ß√£o Inv√°lida\n");
+                printf("OpÁ„o Inv·lida\n");
                 continue;
             } 
         }
@@ -81,13 +81,13 @@ int main() {
             case 1:
                 data = rand() % 100;
                 insertAtHead(&head, data);
-                printf("N√∫mero %d inserido na lista.\n", data);
+                printf("N˙mero %d inserido na lista.\n", data);
                 break;
             case 2:
                 if (head == NULL) {
-                    printf("A lista est√° vazia, n√£o h√° elementos para remover.\n");
+                    printf("A lista est· vazia, n„o h· elementos para remover.\n");
                 } else {
-                    printf("Digite o n√∫mero a ser removido: ");
+                    printf("Digite o n˙mero a ser removido: ");
                     scanf("%d", &data);
                     removeNode(&head, data);
                 }
@@ -100,7 +100,8 @@ int main() {
                 }
                 return 0;
             default:
-                printf("Op√ß√£o inv√°lida.\n");
+                printf("OpÁ„o inv·lida.\n");
         }
     }
+
 }

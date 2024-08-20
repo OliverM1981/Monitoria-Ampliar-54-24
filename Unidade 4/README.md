@@ -8,7 +8,7 @@
 
 Explorar grafos é essencial na computação, pois essas estruturas de dados oferecem maneiras eficientes de representar e manipular conexões e relações entre dados.
 
-## ### Componentes de um Grafo 🔗
+### Componentes de um Grafo 🔗
 
 **Definição:**
 - Um grafo é uma estrutura de dados composta por um conjunto de vértices (ou nós) e arestas (ou ligações) que conectam esses vértices.

@@ -43,7 +43,7 @@ Explorar grafos é essencial na computação, pois essas estruturas de dados ofe
 **Definição:**  
 Uma matriz de adjacência é uma matriz quadrada usada para representar um grafo. As linhas e colunas da matriz correspondem aos vértices do grafo. A entrada na posição `(i, j)` da matriz é um valor que indica se existe uma aresta entre o vértice `i` e o vértice `j`.
 <br>
-<img alt="Matriz de adjacencia" title="#matriz de adjacencia" src="./assets/Matriz Adjacencia.png" width=250/>
+<img alt="Matriz de adjacencia" title="#matriz de adjacencia" src="./assets/Matriz Adjacencia.png" width=400/>
 <br>
 **Características:**
 - Para grafos não direcionados, a matriz é simétrica, pois a aresta de `i` para `j` é a mesma de `j` para `i`.
@@ -58,7 +58,7 @@ A matriz de adjacência é eficiente para verificar a existência de uma aresta 
 **Definição:**  
 Uma matriz de incidência é uma matriz retangular usada para representar um grafo. As linhas da matriz correspondem aos vértices e as colunas correspondem às arestas. A entrada na posição `(i, j)` da matriz indica se o vértice `i` está conectado pela aresta `j`.
 <br>
-<img alt="Matriz de incidencia" title="#matriz de incidencia" src="./assets/Matriz Incidencia.png" width=250/>
+<img alt="Matriz de incidencia" title="#matriz de incidencia" src="./assets/Matriz Incidencia.png" width=400/>
 <br>
 **Características:**
 - Para grafos direcionados, a matriz usa dois valores para indicar a incidência: `1` se o vértice é o ponto de origem da aresta, `-1` se o vértice é o ponto de destino, e `0` se o vértice não está incidente com a aresta.

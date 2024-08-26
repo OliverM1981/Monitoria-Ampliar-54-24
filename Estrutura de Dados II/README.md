@@ -1,7 +1,9 @@
-# 📚 Estrutura de Dados II
 <h2 align="center">
   <img alt="Estutura de Dados" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-11 213826.png" width="800"/>
 </h2>
+
+# 📚 Estrutura de Dados II
+
 ## Unidade 1: Introdução às Árvores
 
 - **Conceito de Árvores**: Exploração das árvores como uma estrutura de dados que otimiza o uso de memória.

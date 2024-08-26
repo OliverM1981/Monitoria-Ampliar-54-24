@@ -1,7 +1,9 @@
-# 📚 Estrutura de Dados I
 <h2 align="center">
   <img alt="Estutura de Dados" title="#Programa Ampliar" src="./assets/Captura de tela 2024-07-11 213826.png" width="800"/>
 </h2>
+
+# 📚 Estrutura de Dados I
+
 ## Unidade 1: Revisão de Conceitos Básicos
 
 - **Variáveis Homogêneas e Heterogêneas**: Retomada dos conceitos de vetores, matrizes e registros, essenciais para a construção de estruturas de dados avançadas.

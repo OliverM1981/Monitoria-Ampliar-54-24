@@ -86,17 +86,17 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ✅ [Lista Dinâmica com Forma de Fila](./C_Codes/Lista%20Dinâmica%20Fila/dynamicListQueue.c)<br><br>
 
 #### :memo: UNIDADE IV: GRAFOS
-⬛ Sete Pontes de Königsberg<br>
-⬛ Teoria dos Grafos<br>
-⬛ Grafos Como Representação de Problemas<br>
-⬛ Representação Computacional de Grafos<br>
-⬛ Implementando Grafos em C<br><br>
+✅ Sete Pontes de Königsberg<br>
+✅ Teoria dos Grafos<br>
+✅ Grafos Como Representação de Problemas<br>
+✅ Representação Computacional de Grafos<br>
+✅ Implementando Grafos em C<br><br>
 
 #### :memo: UNIDADE V: BUSCA EM GRAFOS
-⬛ Busca em Grafos<br>
-⬛ Busca em Profundidade<br>
-⬛ Busca em Largura<br>
-⬛ Algoritmo de Dijkstra<br>
+✅ Busca em Grafos<br>
+✅ Busca em Profundidade<br>
+✅ Busca em Largura<br>
+✅ Algoritmo de Dijkstra<br>
 
 ## :bookmark_tabs: Estrutura de Dados II
 ### :books: Conteúdo programático

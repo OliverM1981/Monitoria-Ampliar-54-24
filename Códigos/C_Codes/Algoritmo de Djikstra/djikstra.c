@@ -145,7 +145,7 @@ void grafo_criar(void) {
         } while (destino < 1 || destino > vertices || destino == origem);
 
         do {
-            printf("Custo (positivo) do vértice %d para o vértice %d: ", origem, destino);
+            printf("Custo (positivo) do vertice %d para o vertice %d: ", origem, destino);
             scanf("%d", &custo);
         } while (custo < 0);
 
@@ -153,7 +153,7 @@ void grafo_criar(void) {
     }
 }
 
-// Busca os menores caminhos entre os vértices
+// Busca os menores caminhos entre os v�rtices
 void grafo_procurar(void) {
     printf("Lista dos Menores Caminhos no Grafo Dado: \n");
     for (int i = 1; i <= vertices; i++) {

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
+#include <time.h>
 
 struct Node {
     int data;
@@ -12,7 +14,7 @@ int max(int a, int b) {
     return (a > b) ? a : b;
 }
 
-int height(struct Node* node) {
+int height(const struct Node* node) {  // 'node' como ponteiro para const
     return (node == NULL) ? 0 : node->height;
 }
 
@@ -51,7 +53,7 @@ struct Node* leftRotate(struct Node* x) {
     return y;
 }
 
-int getBalance(struct Node* node) {
+int getBalance(const struct Node* node) {  // 'node' como ponteiro para const
     return (node == NULL) ? 0 : height(node->left) - height(node->right);
 }
 
@@ -89,16 +91,16 @@ struct Node* insert(struct Node* node, int data) {
     return node;
 }
 
-struct Node* minValueNode(struct Node* node) {
-    struct Node* current = node;
+struct Node* minValueNode(const struct Node* node) {  // 'node' como ponteiro para const
+    struct Node* current = (struct Node*)node;
     while (current->left != NULL)
         current = current->left;
     return current;
 }
 
-struct Node* search(struct Node* root, int key) {
+struct Node* search(const struct Node* root, int key) {  // 'root' como ponteiro para const
     if (root == NULL || root->data == key)
-        return root;
+        return (struct Node*)root;
 
     if (key < root->data)
         return search(root->left, key);
@@ -106,7 +108,7 @@ struct Node* search(struct Node* root, int key) {
     return search(root->right, key);
 }
 
-void inOrder(struct Node* root) {
+void inOrder(const struct Node* root) {  // 'root' como ponteiro para const
     if (root != NULL) {
         inOrder(root->left);
         printf("%d ", root->data);
@@ -114,7 +116,7 @@ void inOrder(struct Node* root) {
     }
 }
 
-void preOrder(struct Node* root) {
+void preOrder(const struct Node* root) {  // 'root' como ponteiro para const
     if (root != NULL) {
         printf("%d ", root->data);
         preOrder(root->left);
@@ -122,7 +124,7 @@ void preOrder(struct Node* root) {
     }
 }
 
-void postOrder(struct Node* root) {
+void postOrder(const struct Node* root) {  // 'root' como ponteiro para const
     if (root != NULL) {
         postOrder(root->left);
         postOrder(root->right);
@@ -130,7 +132,7 @@ void postOrder(struct Node* root) {
     }
 }
 
-void printTree(const struct Node* root, int space) {
+void printTree(const struct Node* root, int space) {  // 'root' como ponteiro para const
     const int COUNT = 5;
     if (root == NULL)
         return;
@@ -157,39 +159,40 @@ void freeTree(struct Node* root) {
 }
 
 int main() {
+    srand(time(NULL));
+    setlocale(LC_ALL, "Portuguese");
     struct Node* root = NULL;
     int choice, num, n;
 
     do {
         printf("\nMenu:\n");
-        printf("1. Criar árvore\n");
-        printf("2. Buscar nó na árvore\n");
+        printf("1. Criar arvore\n");
+        printf("2. Buscar no na arvore\n");
         printf("3. Percurso em ordem\n");
-        printf("4. Percurso pré-ordem\n");
-        printf("5. Percurso pós-ordem\n");
-        printf("6. Balancear árvore (AVL)\n");
-        printf("7. Imprimir árvore\n");
+        printf("4. Percurso pre-ordem\n");
+        printf("5. Percurso pos-ordem\n");
+        printf("6. Balancear arvore (AVL)\n");
+        printf("7. Imprimir arvore\n");
         printf("8. Sair\n");
-        printf("Escolha uma opção: ");
+        printf("Escolha uma opcao: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                printf("Quantos números deseja inserir na árvore binária? ");
+                printf("Quantos nos deseja inserir na arvore binaria? ");
                 scanf("%d", &n);
                 for (int i = 0; i < n; i++) {
-                    printf("Digite o número %d: ", i + 1);
-                    scanf("%d", &num);
+                    num = rand()%100;
                     root = insert(root, num);
                 }
                 break;
             case 2:
-                printf("Digite o número a ser buscado: ");
+                printf("Digite o numero a ser buscado: ");
                 scanf("%d", &num);
                 if (search(root, num) != NULL)
-                    printf("Nó %d encontrado na árvore.\n", num);
+                    printf("Nï¿½ %d encontrado na arvore.\n", num);
                 else
-                    printf("Nó %d não encontrado na árvore.\n", num);
+                    printf("No %d nao encontrado na arvore.\n", num);
                 break;
             case 3:
                 printf("Percurso em ordem: ");
@@ -197,20 +200,20 @@ int main() {
                 printf("\n");
                 break;
             case 4:
-                printf("Percurso pré-ordem: ");
+                printf("Percurso pre-ordem: ");
                 preOrder(root);
                 printf("\n");
                 break;
             case 5:
-                printf("Percurso pós-ordem: ");
+                printf("Percurso pos-ordem: ");
                 postOrder(root);
                 printf("\n");
                 break;
             case 6:
-                printf("A árvore foi balanceada utilizando AVL.\n");
+                printf("A Ã¡rvore foi balanceada utilizando AVL.\n");
                 break;
             case 7:
-                printf("Árvore binária:\n");
+                printf("Ãrvore binÃ¡ria:\n");
                 printTree(root, 0);
                 break;
             case 8:
@@ -218,7 +221,7 @@ int main() {
                 printf("Saindo...\n");
                 break;
             default:
-                printf("Opção inválida! Tente novamente.\n");
+                printf("OpÃ§Ã£o invÃ¡lida! Tente novamente.\n");
         }
     } while (choice != 8);
 

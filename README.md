@@ -57,7 +57,7 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 
 ===========================================================================
 
-| <img alt="Calendar" title="#calendar" src="./assets/1.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=500/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=200/> | 
+| <img alt="Calendar" title="#calendar" src="./assets/1.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=500/> | 
 | :---: | :---: | :---: 
 
 ===========================================================================
@@ -102,10 +102,10 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ### :books: Conteúdo programático
 
 #### :memo: UNIDADE I: ÁRVORES BINÁRIAS
-⬛ Árvore Binária<br>
-⬛ Árvore Estritamente Binária<br>
-⬛ Árvore Binária Completa<br>
-⬛ Implementando Árvore Binária em C<br>
+✅ Árvore Binária<br>
+✅ Árvore Estritamente Binária<br>
+✅ Árvore Binária Completa<br>
+✅ Implementando Árvore Binária em C<br>
 
 #### :memo: UNIDADE II: OPERAÇÕES SOBRE ÁRVORES BINÁRIAS
 ⬛ Caminhamento em Árvores Binárias<br>

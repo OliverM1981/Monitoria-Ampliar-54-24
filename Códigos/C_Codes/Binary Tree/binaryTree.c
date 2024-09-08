@@ -3,6 +3,9 @@
 #include <locale.h>
 #include <time.h>
 
+
+int count = 0;
+
 struct Node {
     int data;
     struct Node* left;
@@ -103,8 +106,11 @@ struct Node* search(const struct Node* root, int key) {  // 'root' como ponteiro
         return (struct Node*)root;
 
     if (key < root->data)
+    {
+        count ++;
         return search(root->left, key);
-
+    }
+    count ++;
     return search(root->right, key);
 }
 
@@ -158,6 +164,7 @@ void freeTree(struct Node* root) {
     free(root);
 }
 
+
 int main() {
     srand(time(NULL));
     setlocale(LC_ALL, "Portuguese");
@@ -166,33 +173,37 @@ int main() {
 
     do {
         printf("\nMenu:\n");
-        printf("1. Criar arvore\n");
-        printf("2. Buscar no na arvore\n");
+        printf("1. Criar árvore\n");
+        printf("2. Buscar no na árvore\n");
         printf("3. Percurso em ordem\n");
-        printf("4. Percurso pre-ordem\n");
-        printf("5. Percurso pos-ordem\n");
-        printf("6. Balancear arvore (AVL)\n");
-        printf("7. Imprimir arvore\n");
+        printf("4. Percurso pré-ordem\n");
+        printf("5. Percurso pós-ordem\n");
+        printf("6. Balancear árvore (AVL)\n");
+        printf("7. Imprimir árvore\n");
         printf("8. Sair\n");
-        printf("Escolha uma opcao: ");
+        printf("Escolha uma opção: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                printf("Quantos nos deseja inserir na arvore binaria? ");
+                printf("Quantos nós deseja inserir na árvore binária? ");
                 scanf("%d", &n);
                 for (int i = 0; i < n; i++) {
-                    num = rand()%100;
+                    printf( "Insira o valor do nó %d: ", i+1);
+
+                    scanf("%d", &num);
                     root = insert(root, num);
                 }
                 break;
             case 2:
-                printf("Digite o numero a ser buscado: ");
+                count = 0;
+                printf("Digite o número a ser buscado: ");
                 scanf("%d", &num);
                 if (search(root, num) != NULL)
-                    printf("Nï¿½ %d encontrado na arvore.\n", num);
+                    printf("Nó %d encontrado na árvore após %d buscas.\n", num, count);
+
                 else
-                    printf("No %d nao encontrado na arvore.\n", num);
+                    printf("Nó %d não encontrado na árvore.\n", num);
                 break;
             case 3:
                 printf("Percurso em ordem: ");
@@ -200,20 +211,20 @@ int main() {
                 printf("\n");
                 break;
             case 4:
-                printf("Percurso pre-ordem: ");
+                printf("Percurso pré-ordem: ");
                 preOrder(root);
                 printf("\n");
                 break;
             case 5:
-                printf("Percurso pos-ordem: ");
+                printf("Percurso pós-ordem: ");
                 postOrder(root);
                 printf("\n");
                 break;
             case 6:
-                printf("A Ã¡rvore foi balanceada utilizando AVL.\n");
+                printf("A árvore foi balanceada utilizando AVL.\n");
                 break;
             case 7:
-                printf("Ãrvore binÃ¡ria:\n");
+                printf("Árvore binária:\n");
                 printTree(root, 0);
                 break;
             case 8:
@@ -221,7 +232,7 @@ int main() {
                 printf("Saindo...\n");
                 break;
             default:
-                printf("OpÃ§Ã£o invÃ¡lida! Tente novamente.\n");
+                printf("Opção inválida! Tente novamente.\n");
         }
     } while (choice != 8);
 

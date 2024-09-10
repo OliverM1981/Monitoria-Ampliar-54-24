@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <locale.h>
 
 #define TABLE_SIZE 10
+#define INDEX_SIZE 5
 
-// Estrutura para Tabela de Dispers√£o (Hash)
 typedef struct {
     int chave;
     int valor;
@@ -11,7 +13,12 @@ typedef struct {
 
 TabelaHash* tabelaHash[TABLE_SIZE];
 
-// Fun√ß√µes para Tabela Hash
+typedef struct {
+    int* lista;
+    int tamanho;
+} Indexador;
+
+
 int funcaoHash(int chave) {
     return chave % TABLE_SIZE;
 }
@@ -34,20 +41,32 @@ int buscarHash(int chave) {
         }
         index = (index + 1) % TABLE_SIZE;
     }
-    return -1; // Valor n√£o encontrado
+    return -1;
 }
 
-// Fun√ß√£o de Busca Sequencial
+
 int buscaSequencial(int* lista, int tamanho, int valor) {
     for (int i = 0; i < tamanho; i++) {
         if (lista[i] == valor) {
-            return i; // Retorna a posi√ß√£o do valor
+            return i;
         }
     }
-    return -1; // Valor n√£o encontrado
+    return -1;
 }
 
-// Fun√ß√£o de Busca Bin√°ria
+// FunÁ„o de Busca Sequencial Indexada
+int buscaSequencialIndexada(Indexador* indexador, int valor) {
+    int* lista = indexador->lista;
+    int tamanho = indexador->tamanho;
+
+    for (int i = 0; i < tamanho; i++) {
+        if (lista[i] == valor) {
+            return i;
+        }
+    }
+    return -1;
+}
+
 int buscaBinaria(int* lista, int valor, int inicio, int fim) {
     while (inicio <= fim) {
         int meio = (inicio + fim) / 2;
@@ -59,18 +78,36 @@ int buscaBinaria(int* lista, int valor, int inicio, int fim) {
             fim = meio - 1;
         }
     }
-    return -1; // Valor n√£o encontrado
+    return -1;
 }
 
-// Fun√ß√£o para criar uma lista
-void criarLista(int* lista, int tamanho) {
-    printf("Digite os %d elementos da lista:\n", tamanho);
-    for (int i = 0; i < tamanho; i++) {
-        scanf("%d", &lista[i]);
+void quicksort(int* lista, int inicio, int fim) {
+    if (inicio < fim) {
+        int pivo = lista[fim];
+        int i = inicio - 1;
+        for (int j = inicio; j < fim; j++) {
+            if (lista[j] <= pivo) {
+                i++;
+                int temp = lista[i];
+                lista[i] = lista[j];
+                lista[j] = temp;
+            }
+        }
+        int temp = lista[i + 1];
+        lista[i + 1] = lista[fim];
+        lista[fim] = temp;
+        int pivoIndex = i + 1;
+        quicksort(lista, inicio, pivoIndex - 1);
+        quicksort(lista, pivoIndex + 1, fim);
     }
 }
 
-// Fun√ß√£o para imprimir a lista
+void criarLista(int* lista, int tamanho) {
+    for (int i = 0; i < tamanho; i++) {
+        lista[i] = rand() % 100 + 1;
+    }
+}
+
 void imprimirLista(int* lista, int tamanho) {
     if (tamanho == 0) {
         printf("Lista vazia\n");
@@ -84,32 +121,48 @@ void imprimirLista(int* lista, int tamanho) {
 }
 
 int main() {
+    srand(time(NULL));
+    setlocale(LC_ALL, "Portuguese");
     int lista[100];
+    int listaAux[100];
     int tamanho = 0;
     int opcao, valor, resultado;
-    
-    // Inicializando a tabela de dispers√£o (hash) vazia
+
     for (int i = 0; i < TABLE_SIZE; i++) {
         tabelaHash[i] = NULL;
     }
+
+    Indexador indexador;
+    indexador.lista = NULL;
+    indexador.tamanho = 0;
 
     do {
         imprimirLista(lista, tamanho);
         printf("\nMenu:\n");
         printf("1. Criar Lista\n");
         printf("2. Busca Sequencial\n");
-        printf("3. Busca Bin√°ria\n");
-        printf("4. Inserir em Tabela Hash\n");
-        printf("5. Buscar em Tabela Hash\n");
+        printf("3. Busca Sequencial Indexada\n");
+        printf("4. Busca Bin·ria\n");
+        printf("5. Inserir em Tabela Hash\n");
+        printf("6. Buscar em Tabela Hash\n");
         printf("0. Sair\n");
-        printf("Escolha uma op√ß√£o: ");
+        printf("Escolha uma opÁ„o: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
             case 1:
-                printf("Quantos elementos deseja adicionar na lista? ");
+                printf("Quantos elementos deseja adicionar na lista?: ");
                 scanf("%d", &tamanho);
                 criarLista(lista, tamanho);
+
+                if (indexador.lista != NULL) {
+                    free(indexador.lista);
+                }
+                indexador.lista = (int*) malloc(tamanho * sizeof(int));
+                for (int i = 0; i < tamanho; i++) {
+                    indexador.lista[i] = lista[i];
+                }
+                indexador.tamanho = tamanho;
                 break;
 
             case 2:
@@ -117,24 +170,46 @@ int main() {
                 scanf("%d", &valor);
                 resultado = buscaSequencial(lista, tamanho, valor);
                 if (resultado != -1) {
-                    printf("Valor encontrado na posi√ß√£o %d.\n", resultado);
+                    printf("Valor encontrado na posiÁ„o %d.\n", resultado);
                 } else {
-                    printf("Valor n√£o encontrado.\n");
+                    printf("Valor n„o encontrado.\n");
                 }
                 break;
 
             case 3:
-                printf("Digite o valor para busca bin√°ria (lista precisa estar ordenada): ");
+                printf("Digite o valor para busca sequencial indexada: ");
                 scanf("%d", &valor);
-                resultado = buscaBinaria(lista, valor, 0, tamanho - 1);
+                resultado = buscaSequencialIndexada(&indexador, valor);
                 if (resultado != -1) {
-                    printf("Valor encontrado na posi√ß√£o %d.\n", resultado);
+                    printf("Valor encontrado na posiÁ„o %d.\n", resultado);
                 } else {
-                    printf("Valor n√£o encontrado.\n");
+                    printf("Valor n„o encontrado.\n");
                 }
                 break;
 
             case 4:
+                printf("Digite o valor para busca bin·ria: ");
+                scanf("%d", &valor);
+
+                // Criar uma cÛpia da lista e ordenar
+                for (int i = 0; i < tamanho; i++) {
+                    listaAux[i] = lista[i];
+                }
+                quicksort(listaAux, 0, tamanho - 1);
+
+                // Exibir lista ordenada
+                printf("Lista ordenada: ");
+                imprimirLista(listaAux, tamanho);
+
+                resultado = buscaBinaria(listaAux, valor, 0, tamanho - 1);
+                if (resultado != -1) {
+                    printf("Valor encontrado na posiÁ„o %d da lista ordenada.\n", resultado);
+                } else {
+                    printf("Valor n„o encontrado.\n");
+                }
+                break;
+
+            case 5:
                 printf("Digite a chave e o valor para inserir na tabela hash: ");
                 int chave;
                 scanf("%d %d", &chave, &valor);
@@ -142,14 +217,14 @@ int main() {
                 printf("Valor inserido com sucesso.\n");
                 break;
 
-            case 5:
+            case 6:
                 printf("Digite a chave para buscar na tabela hash: ");
                 scanf("%d", &chave);
                 resultado = buscarHash(chave);
                 if (resultado != -1) {
                     printf("Valor encontrado: %d\n", resultado);
                 } else {
-                    printf("Chave n√£o encontrada.\n");
+                    printf("Chave n„o encontrada.\n");
                 }
                 break;
 
@@ -158,9 +233,17 @@ int main() {
                 break;
 
             default:
-                printf("Op√ß√£o inv√°lida.\n");
+                printf("OpÁ„o inv·lida.\n");
         }
     } while (opcao != 0);
+
+    // LiberaÁ„o da memÛria alocada
+    free(indexador.lista);
+    for (int i = 0; i < TABLE_SIZE; i++) {
+        if (tabelaHash[i] != NULL) {
+            free(tabelaHash[i]);
+        }
+    }
 
     return 0;
 }

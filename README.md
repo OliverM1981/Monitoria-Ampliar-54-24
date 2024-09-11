@@ -108,30 +108,30 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ✅ Implementando Árvore Binária em C<br>
 
 #### :memo: UNIDADE II: OPERAÇÕES SOBRE ÁRVORES BINÁRIAS
-⬛ Caminhamento em Árvores Binárias<br>
-⬛ Percurso Pré-Ordem<br>
-⬛ Percurso Em-Ordem<br>
-⬛ Percurso Pós-Ordem<br>
-⬛ Busca em Árvores Binárias<br>
-⬛ Árvores AVL<br>
+✅ Caminhamento em Árvores Binárias<br>
+✅ Percurso Pré-Ordem<br>
+✅ Percurso Em-Ordem<br>
+✅ Percurso Pós-Ordem<br>
+✅ Busca em Árvores Binárias<br>
+✅ Árvores AVL<br>
 
 #### :memo: UNIDADE III: TÉCNICAS DE ORDENAÇÃO
-⬛ Ordenação por Bubblesort (Método da Bolha)<br>
-⬛ Ordenação por Selectionsort<br>
-⬛ Ordenação por Insertionsort<br>
-⬛ Ordenação por Shellsort<br>
+✅ Ordenação por Bubblesort (Método da Bolha)<br>
+✅ Ordenação por Selectionsort<br>
+✅ Ordenação por Insertionsort<br>
+✅ Ordenação por Shellsort<br>
 
 #### :memo: UNIDADE IV: ALGORITMOS DE ORDENAÇÃO AVANÇADOS
-⬛ Ordenação por Mergesort<br>
-⬛ Ordenação por Quicksort<br>
-⬛ Ordenação por Heapsort<br>
+✅ Ordenação por Mergesort<br>
+✅ Ordenação por Quicksort<br>
+✅ Ordenação por Heapsort<br>
 
 #### :memo: UNIDADE V: OPERAÇÕES DE BUSCA
-⬛ Operação de Busca Sequencial<br>
-⬛ Busca Sequencial Indexada<br>
-⬛ A Busca Binária<br>
-⬛ Busca por Interpolação<br>
-⬛ Tabela de Dispersão<br>
+✅ Operação de Busca Sequencial<br>
+✅ Busca Sequencial Indexada<br>
+✅ A Busca Binária<br>
+✅ Busca por Interpolação<br>
+✅ Tabela de Dispersão<br>
 
 
 <br><br><br>

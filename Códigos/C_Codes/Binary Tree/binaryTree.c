@@ -173,23 +173,23 @@ int main() {
 
     do {
         printf("\nMenu:\n");
-        printf("1. Criar ·rvore\n");
-        printf("2. Buscar no na ·rvore\n");
+        printf("1. Criar √°rvore\n");
+        printf("2. Buscar no na √°rvore\n");
         printf("3. Percurso em ordem\n");
-        printf("4. Percurso prÈ-ordem\n");
-        printf("5. Percurso pÛs-ordem\n");
-        printf("6. Balancear ·rvore (AVL)\n");
-        printf("7. Imprimir ·rvore\n");
+        printf("4. Percurso pr√©-ordem\n");
+        printf("5. Percurso p√≥s-ordem\n");
+        printf("6. Balancear √°rvore (AVL)\n");
+        printf("7. Imprimir √°rvore\n");
         printf("8. Sair\n");
-        printf("Escolha uma opÁ„o: ");
+        printf("Escolha uma op√ß√£o: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                printf("Quantos nÛs deseja inserir na ·rvore bin·ria? ");
+                printf("Quantos n√≥s deseja inserir na √°rvore bin√°ria? ");
                 scanf("%d", &n);
                 for (int i = 0; i < n; i++) {
-                    printf( "Insira o valor do nÛ %d: ", i+1);
+                    printf( "Insira o valor do n? %d: ", i+1);
 
                     scanf("%d", &num);
                     root = insert(root, num);
@@ -197,13 +197,13 @@ int main() {
                 break;
             case 2:
                 count = 0;
-                printf("Digite o n˙mero a ser buscado: ");
+                printf("Digite o n?mero a ser buscado: ");
                 scanf("%d", &num);
                 if (search(root, num) != NULL)
-                    printf("NÛ %d encontrado na ·rvore apÛs %d buscas.\n", num, count);
+                    printf("N? %d encontrado na √°rvore ap?s %d buscas.\n", num, count);
 
                 else
-                    printf("NÛ %d n„o encontrado na ·rvore.\n", num);
+                    printf("N? %d n?o encontrado na √°rvore.\n", num);
                 break;
             case 3:
                 printf("Percurso em ordem: ");
@@ -211,20 +211,20 @@ int main() {
                 printf("\n");
                 break;
             case 4:
-                printf("Percurso prÈ-ordem: ");
+                printf("Percurso pr?-ordem: ");
                 preOrder(root);
                 printf("\n");
                 break;
             case 5:
-                printf("Percurso pÛs-ordem: ");
+                printf("Percurso p√≥s-ordem: ");
                 postOrder(root);
                 printf("\n");
                 break;
             case 6:
-                printf("A ·rvore foi balanceada utilizando AVL.\n");
+                printf("A √°rvore foi balanceada utilizando AVL.\n");
                 break;
             case 7:
-                printf("¡rvore bin·ria:\n");
+                printf("√Årvore bin√°ria:\n");
                 printTree(root, 0);
                 break;
             case 8:
@@ -232,7 +232,7 @@ int main() {
                 printf("Saindo...\n");
                 break;
             default:
-                printf("OpÁ„o inv·lida! Tente novamente.\n");
+                printf("Op√ß√£o inv√°lida! Tente novamente.\n");
         }
     } while (choice != 8);
 

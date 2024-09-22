@@ -52,12 +52,17 @@ Estou ansioso para conectar com colegas e profissionais que compartilham minha p
 
 :calendar: Terças e Quartas-feiras<br>  :alarm_clock: Das 20h às 22h.<br>
 
+De 23/09/2024 até 22/11/2024<br>
+
+<progress value="0" max="100"></progress>
+
+
 Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_NGFjMTdkYmItNDRmMC00MThiLTljZmEtYjNmZTZlYmNlMDhm%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522311bf579-63f2-426a-80aa-d3a26f1c0ad1%2522%252c%2522Oid%2522%253a%2522d9d9f61f-3b69-4da3-bd9b-e8237deec503%2522%257d&sa=D&sntz=1&usg=AOvVaw3WEXDDJ5X9Vh2UpvqKufIL)
 
 
 ===========================================================================
 
-| <img alt="Calendar" title="#calendar" src="./assets/1.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=500/> | 
+| <img alt="Calendar" title="#calendar" src="./assets/1.png" width=2500/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=200/> | 
 | :---: | :---: | :---: 
 
 ===========================================================================
@@ -65,73 +70,73 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ## :bookmark_tabs: Estrutura de Dados I
 ### :books: Conteúdo programático
 #### :memo: UNIDADE I: PONTEIROS
-✅ [Estruturas Homogêneas e Heterogêneas](./C_Codes/Unidade%201/Revisão%20estruturas/revisaoEstruturas.c)<br>
-✅ [Vetores e Matrizes](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
-✅ [Structs](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
-✅ [Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
-✅ [Propriedades de Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
-✅ [Alocação Dinâmica na Memória](./C_Codes/Ponteiros/pointerMalloc.c)<br>
-✅ [Criando Vetores Dinâmicos](./C_Codes/Ponteiros/dynamicArray.c)<br>
-✅ [Considerações Finais](./Unidade%201/README.md)<br><br>
+⬛ [Estruturas Homogêneas e Heterogêneas](./C_Codes/Unidade%201/Revisão%20estruturas/revisaoEstruturas.c)<br>
+⬛ [Vetores e Matrizes](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
+⬛ [Structs](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
+⬛ [Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
+⬛ [Propriedades de Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
+⬛ [Alocação Dinâmica na Memória](./C_Codes/Ponteiros/pointerMalloc.c)<br>
+⬛ [Criando Vetores Dinâmicos](./C_Codes/Ponteiros/dynamicArray.c)<br>
+⬛ [Considerações Finais](./Unidade%201/README.md)<br><br>
 
 #### :memo: UNIDADE II: PILHAS E FILAS
-✅ [Pilhas](./C_Codes/Pilha)<br>
-✅ [Filas](./C_Codes/Fila/) <br>
-✅ [Considerações Finais](./Unidade%202/README.md)<br><br>
+⬛ [Pilhas](./C_Codes/Pilha)<br>
+⬛ [Filas](./C_Codes/Fila/) <br>
+⬛ [Considerações Finais](./Unidade%202/README.md)<br><br>
 
 #### :memo: UNIDADE III: LISTAS DINÂMICAS
-✅ [Fundamentos de Listas Dinâmicas](./Unidade%203/README.md)<br>
-✅ [Implementando uma Lista Dinâmica](./C_Codes/Lista%20Encadeada/linkedList.c)<br>
-✅ [Lista Dinâmica com Forma de Pilha](./C_Codes/Lista%20Dinamica%20Pilha/dynamicListStack.c)<br>
-✅ [Lista Dinâmica com Forma de Fila](./C_Codes/Lista%20Dinâmica%20Fila/dynamicListQueue.c)<br><br>
+⬛ [Fundamentos de Listas Dinâmicas](./Unidade%203/README.md)<br>
+⬛ [Implementando uma Lista Dinâmica](./C_Codes/Lista%20Encadeada/linkedList.c)<br>
+⬛ [Lista Dinâmica com Forma de Pilha](./C_Codes/Lista%20Dinamica%20Pilha/dynamicListStack.c)<br>
+⬛ [Lista Dinâmica com Forma de Fila](./C_Codes/Lista%20Dinâmica%20Fila/dynamicListQueue.c)<br><br>
 
 #### :memo: UNIDADE IV: GRAFOS
-✅ Sete Pontes de Königsberg<br>
-✅ Teoria dos Grafos<br>
-✅ Grafos Como Representação de Problemas<br>
-✅ Representação Computacional de Grafos<br>
-✅ Implementando Grafos em C<br><br>
+⬛ Sete Pontes de Königsberg<br>
+⬛ Teoria dos Grafos<br>
+⬛ Grafos Como Representação de Problemas<br>
+⬛ Representação Computacional de Grafos<br>
+⬛ Implementando Grafos em C<br><br>
 
 #### :memo: UNIDADE V: BUSCA EM GRAFOS
-✅ Busca em Grafos<br>
-✅ Busca em Profundidade<br>
-✅ Busca em Largura<br>
-✅ Algoritmo de Dijkstra<br>
+⬛ Busca em Grafos<br>
+⬛ Busca em Profundidade<br>
+⬛ Busca em Largura<br>
+⬛ Algoritmo de Dijkstra<br>
 
 ## :bookmark_tabs: Estrutura de Dados II
 ### :books: Conteúdo programático
 
 #### :memo: UNIDADE I: ÁRVORES BINÁRIAS
-✅ Árvore Binária<br>
-✅ Árvore Estritamente Binária<br>
-✅ Árvore Binária Completa<br>
-✅ Implementando Árvore Binária em C<br>
+⬛ Árvore Binária<br>
+⬛ Árvore Estritamente Binária<br>
+⬛ Árvore Binária Completa<br>
+⬛ Implementando Árvore Binária em C<br>
 
 #### :memo: UNIDADE II: OPERAÇÕES SOBRE ÁRVORES BINÁRIAS
-✅ Caminhamento em Árvores Binárias<br>
-✅ Percurso Pré-Ordem<br>
-✅ Percurso Em-Ordem<br>
-✅ Percurso Pós-Ordem<br>
-✅ Busca em Árvores Binárias<br>
-✅ Árvores AVL<br>
+⬛ Caminhamento em Árvores Binárias<br>
+⬛ Percurso Pré-Ordem<br>
+⬛ Percurso Em-Ordem<br>
+⬛ Percurso Pós-Ordem<br>
+⬛ Busca em Árvores Binárias<br>
+⬛ Árvores AVL<br>
 
 #### :memo: UNIDADE III: TÉCNICAS DE ORDENAÇÃO
-✅ Ordenação por Bubblesort (Método da Bolha)<br>
-✅ Ordenação por Selectionsort<br>
-✅ Ordenação por Insertionsort<br>
-✅ Ordenação por Shellsort<br>
+⬛ Ordenação por Bubblesort (Método da Bolha)<br>
+⬛ Ordenação por Selectionsort<br>
+⬛ Ordenação por Insertionsort<br>
+⬛ Ordenação por Shellsort<br>
 
 #### :memo: UNIDADE IV: ALGORITMOS DE ORDENAÇÃO AVANÇADOS
-✅ Ordenação por Mergesort<br>
-✅ Ordenação por Quicksort<br>
-✅ Ordenação por Heapsort<br>
+⬛ Ordenação por Mergesort<br>
+⬛ Ordenação por Quicksort<br>
+⬛ Ordenação por Heapsort<br>
 
 #### :memo: UNIDADE V: OPERAÇÕES DE BUSCA
-✅ Operação de Busca Sequencial<br>
-✅ Busca Sequencial Indexada<br>
-✅ A Busca Binária<br>
-✅ Busca por Interpolação<br>
-✅ Tabela de Dispersão<br>
+⬛ Operação de Busca Sequencial<br>
+⬛ Busca Sequencial Indexada<br>
+⬛ A Busca Binária<br>
+⬛ Busca por Interpolação<br>
+⬛ Tabela de Dispersão<br>
 
 
 <br><br><br>

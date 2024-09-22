@@ -68,25 +68,25 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ## :bookmark_tabs: Estrutura de Dados I
 ### :books: Conteúdo programático
 #### :memo: UNIDADE I: PONTEIROS
-⬛ [Estruturas Homogêneas e Heterogêneas](./C_Codes/Unidade%201/Revisão%20estruturas/revisaoEstruturas.c)<br>
-⬛ [Vetores e Matrizes](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
-⬛ [Structs](./C_Codes/Revisão%20estruturas/revisaoEstruturas.c)<br>
-⬛ [Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
-⬛ [Propriedades de Ponteiros](./C_Codes/Ponteiros/pointer.c)<br>
-⬛ [Alocação Dinâmica na Memória](./C_Codes/Ponteiros/pointerMalloc.c)<br>
-⬛ [Criando Vetores Dinâmicos](./C_Codes/Ponteiros/dynamicArray.c)<br>
-⬛ [Considerações Finais](./Unidade%201/README.md)<br><br>
+⬛ Estruturas Homogêneas e Heterogêneas<br>
+⬛ Vetores e Matrizes<br>
+⬛ Structs<br>
+⬛ Ponteiros<br>
+⬛ Propriedades de Ponteiros<br>
+⬛ Alocação Dinâmica na Memória<br>
+⬛ Criando Vetores Dinâmicos<br>
+⬛ Considerações Finais<br><br>
 
 #### :memo: UNIDADE II: PILHAS E FILAS
-⬛ [Pilhas](./C_Codes/Pilha)<br>
-⬛ [Filas](./C_Codes/Fila/) <br>
-⬛ [Considerações Finais](./Unidade%202/README.md)<br><br>
+⬛ Pilhas<br>
+⬛ Filas <br>
+⬛ Considerações Finais<br><br>
 
 #### :memo: UNIDADE III: LISTAS DINÂMICAS
-⬛ [Fundamentos de Listas Dinâmicas](./Unidade%203/README.md)<br>
-⬛ [Implementando uma Lista Dinâmica](./C_Codes/Lista%20Encadeada/linkedList.c)<br>
-⬛ [Lista Dinâmica com Forma de Pilha](./C_Codes/Lista%20Dinamica%20Pilha/dynamicListStack.c)<br>
-⬛ [Lista Dinâmica com Forma de Fila](./C_Codes/Lista%20Dinâmica%20Fila/dynamicListQueue.c)<br><br>
+⬛ Fundamentos de Listas Dinâmicas<br>
+⬛ Implementando uma Lista Dinâmica<br>
+⬛ Lista Dinâmica com Forma de Pilha<br>
+⬛ Lista Dinâmica com Forma de Fila<br><br>
 
 #### :memo: UNIDADE IV: GRAFOS
 ⬛ Sete Pontes de Königsberg<br>

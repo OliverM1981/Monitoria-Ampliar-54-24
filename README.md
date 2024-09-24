@@ -19,7 +19,7 @@ Monitoria de Estrutura de Dados
 <p align = "justify">
 
 
-Olá, sou Mauricio De Oliveira, um estudante do curso de Engenharia de Software na Unicesumar, atualmente na 15ª série.
+Olá, sou Mauricio De Oliveira, um estudante do curso de Engenharia de Software na Unicesumar, atualmente na 16ª série.
 
 Além de me dedicar aos estudos, tenho o privilégio de atuar como monitor na disciplina de Estrutura de Dados, por meio do programa Ampliar Tecnologias da Unicesumar. Essa oportunidade não apenas reforça meu entendimento dos conceitos fundamentais, mas também me permite compartilhar meu entusiasmo pela tecnologia com meus colegas.
 
@@ -41,11 +41,11 @@ Estou ansioso para conectar com colegas e profissionais que compartilham minha p
 ## :computer: Sobre a monitoria
 
 <p align = "justify">
-• Construir raciocínio lógico para interpretação de problemas reais.<br>
-• Desenvolver algoritmos a partir das estruturas lógicas de representação básicas de dados para sistemas computacionais.<br>
-• Aprender a cruzar dados por meio de tabelas com intuito de trabalhar com a mineração dos mesmos.<br>
-• Aplicar técnicas de ordenação e consulta de dados para otimizar a busca de valores dentro de um determinado programa.<br>
-• Sistematizar técnicas de representação computacional por meio de grafos de forma a melhorar a busca em programas.<br></p>
+ • Fortalecer o pensamento lógico para a resolução de problemas complexos, aproximando a teoria à prática em cenários reais.<br> 
+ • Desenvolver algoritmos utilizando as principais estruturas de dados, como listas, pilhas, filas e árvores, aplicáveis em diferentes contextos computacionais.<br> 
+ • Explorar técnicas de manipulação e análise de dados em tabelas para aprimorar a eficiência em operações de mineração de dados.<br> 
+ • Implementar métodos avançados de ordenação e pesquisa para otimizar o desempenho de algoritmos de busca em sistemas computacionais.<br> 
+ • Integrar estruturas de grafos como ferramenta para melhorar a eficiência na navegação e recuperação de dados em diversos tipos de programas.<br></p>
 
 
 ## :globe_with_meridians: Encontros presenciais ao vivo

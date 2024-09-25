@@ -11,7 +11,7 @@
 
 # :mag: Programa Ampliar Tecnologias
 
-Olá, este repositório é exclusivo para uso durante o módulo 53/2024 do Programa Ampliar Tecnologias<br>
+Olá, este repositório é exclusivo para uso durante o módulo 54/2024 do Programa Ampliar Tecnologias<br>
 Monitoria de Estrutura de Dados
 
 

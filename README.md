@@ -58,7 +58,7 @@ Andamento das monitorias [░░░░░░░░░░░░░░░░]0% <b
 Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_NGFjMTdkYmItNDRmMC00MThiLTljZmEtYjNmZTZlYmNlMDhm%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522311bf579-63f2-426a-80aa-d3a26f1c0ad1%2522%252c%2522Oid%2522%253a%2522d9d9f61f-3b69-4da3-bd9b-e8237deec503%2522%257d&sa=D&sntz=1&usg=AOvVaw3WEXDDJ5X9Vh2UpvqKufIL)
 
 
-===========================================================================
+======================================================================
 
 | <img alt="Calendar" title="#calendar" src="./assets/1.png" width=200/> | <img alt="Calendar" title="#calendar" src="./assets/2.png" width=500/> | <img alt="Calendar" title="#calendar" src="./assets/3.png" width=200/> | 
 | :---: | :---: | :---: 

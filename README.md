@@ -52,7 +52,7 @@ Estou ansioso para conectar com colegas e profissionais que compartilham minha p
 De 23/09/2024 até 22/11/2024<br>
 :calendar: Terças e Quartas-feiras<br>  :alarm_clock: Das 20h às 22h.<br>
 
-Andamento das monitorias [▓▓▓░░░░░░░░░░░░░]12,5% <br>
+Andamento das monitorias [▓▓▓▓▓░░░░░░░░░░]37,5% <br>
 
 
 Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams.microsoft.com%2Fl%2Fmeetup-join%2F19%253ameeting_NGFjMTdkYmItNDRmMC00MThiLTljZmEtYjNmZTZlYmNlMDhm%2540thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522311bf579-63f2-426a-80aa-d3a26f1c0ad1%2522%252c%2522Oid%2522%253a%2522d9d9f61f-3b69-4da3-bd9b-e8237deec503%2522%257d&sa=D&sntz=1&usg=AOvVaw3WEXDDJ5X9Vh2UpvqKufIL)

@@ -68,19 +68,19 @@ Via Teams acessando este [link](https://www.google.com/url?q=https%3A%2F%2Fteams
 ## :bookmark_tabs: Estrutura de Dados I
 ### :books: Conteúdo programático
 #### :memo: UNIDADE I: PONTEIROS
-⬛ Estruturas Homogêneas e Heterogêneas<br>
-⬛ Vetores e Matrizes<br>
-⬛ Structs<br>
-⬛ Ponteiros<br>
-⬛ Propriedades de Ponteiros<br>
-⬛ Alocação Dinâmica na Memória<br>
-⬛ Criando Vetores Dinâmicos<br>
-⬛ Considerações Finais<br><br>
+🟩 Estruturas Homogêneas e Heterogêneas<br>
+🟩 Vetores e Matrizes<br>
+🟩 Structs<br>
+🟩 Ponteiros<br>
+🟩 Propriedades de Ponteiros<br>
+🟩 Alocação Dinâmica na Memória<br>
+🟩 Criando Vetores Dinâmicos<br>
+🟩 Considerações Finais<br><br>
 
 #### :memo: UNIDADE II: PILHAS E FILAS
-⬛ Pilhas<br>
-⬛ Filas <br>
-⬛ Considerações Finais<br><br>
+🟩 Pilhas<br>
+🟩 Filas <br>
+🟩 Considerações Finais<br><br>
 
 #### :memo: UNIDADE III: LISTAS DINÂMICAS
 ⬛ Fundamentos de Listas Dinâmicas<br>

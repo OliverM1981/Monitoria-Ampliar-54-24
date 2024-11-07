@@ -6,6 +6,7 @@
 /bin/
 /out/
 /build_wrapper_output_directory/
+/output/
 
 # Ignore IDE specific files
 *.idea/
